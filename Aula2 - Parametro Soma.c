@@ -4,14 +4,14 @@ int somanum(int num1, int num2);
 
 int main(){
     
-    int soma, num1, num2;
+    int soma, n1, n2;
     printf("Digite o 1 numero: ");
-    scanf("%d", &num1);
+    scanf("%d", &n1);
     
     printf("Digite o 2 numero: ");
-    scanf("%d", &num2);
+    scanf("%d", &n2);
 
-    soma = somanum(num1, num2);
+    soma = somanum(n1, n2);
 
     printf("\nO valor da soma: %d", soma);
     
