@@ -13,7 +13,7 @@ int main(){
 
     soma = somanum(num1, num2);
 
-    printf("\nO valor da soma:", soma);
+    printf("\nO valor da soma: %d", soma);
     
     return 0;
 }
