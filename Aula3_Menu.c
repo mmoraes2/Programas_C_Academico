@@ -1,39 +1,51 @@
 #include <stdio.h>
 
+int soma(int num1, int num2){
+    return num1+num2;
+}
+
+int sub(int num1, int num2){
+    return num1-num2;
+}
+
 int menu(){
     int id; 
     
-    printf("\n***********\n");
-    printf("\nCalculadora\n");
-    printf("\n***********\n");
+    printf("\n***********");
+    printf("\nCalculadora");
+    printf("\n***********");
     
     printf("\n1 - Soma");
     printf("\n2 - Subtrair");
     printf("\n3 - Sair");
     
-    printf("\n\n***********\n");
+    printf("\n***********\n");
     
     do{
-        printf("\n\n Escolha a opcao desejada: ");
+        printf("\nEscolha a opcao desejada: ");
         scanf("%d", &id);
     }
-    
     while(id<=0 || id>2);
+    
+    if(id == 1){
+        printf("\nSoma!");
+    }
+    if(id == 2){
+        printf("\nSubtracao!");
+    }
 
     return id;
 }
 
 int main(){
     
-    int rs;
-    rs = menu();
+    int m;
+    m = menu();
     
-    if(rs == 1){
-        printf("\n Soma!");
-    }
-    if(rs == 2){
-        printf("\n Subtracao!");
-    }
+    if(m==0)
+        return 0;
+    else
+    
         
     return 0;
 }
