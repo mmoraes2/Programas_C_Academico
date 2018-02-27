@@ -13,8 +13,12 @@ int menu(){
     
     printf("\n\n***********\n");
     
-    printf("\n\n Escolha a opcao desejada: ");
-    scanf("%d", &id);
+    do{
+        printf("\n\n Escolha a opcao desejada: ");
+        scanf("%d", &id);
+    }
+    
+    while(id<=0 || id>2);
 
     return id;
 }
@@ -25,11 +29,11 @@ int main(){
     rs = menu();
     
     if(rs == 1){
-        printf("\nSoma!");
+        printf("\n Soma!");
     }
     if(rs == 2){
-        printf("\nSubtracao!");
+        printf("\n Subtracao!");
     }
-    
+        
     return 0;
 }
