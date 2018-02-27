@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(){
-    
+int menu(){
     int id; 
     
     printf("\n***********\n");
@@ -16,15 +15,21 @@ int main(){
     
     printf("\n\n Escolha a opcao desejada: ");
     scanf("%d", &id);
+
+    return id;
+}
+
+int main(){
     
-    if(id == 1){
+    int rs;
+    rs = menu();
+    
+    if(rs == 1){
         printf("\nSoma!");
     }
-    if(id == 2){
+    if(rs == 2){
         printf("\nSubtracao!");
     }
-    else
-
     
     return 0;
 }
