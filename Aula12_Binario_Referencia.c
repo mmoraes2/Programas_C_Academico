@@ -26,7 +26,5 @@ int main()
   printf("\n Decimal: %d em binario e: ", n);
   binario(&n);
   
-  printf("\n");
- 
   return 0;
 }
